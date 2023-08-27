@@ -65,6 +65,31 @@ def add_to_dataset(data:dict) -> None:
 
     return None
 
+
+def terminal_log():
+
+    """
+    Write terminal logs to a txt file to make sure the data collection went well
+    even when you closed the terminal window.
+    Message includes time of scrape
+    """
+    # Get current time
+    t = time.localtime()
+    current_time = time.strftime("%b-%d; %H:%M:%S", t)
+    # prepare message to log
+    message = f"Scraping done. TIMESTAMP -> {current_time} \n"
+    terminal_path = 'terminal_logs.txt'
+    # If txt file doesn't exist then create it, otherwise append to it
+    if not os.path.isfile(terminal_path):
+        with open(terminal_path, 'w') as file:
+            file.write(message)
+    else:
+        with open(terminal_path, 'a') as file:
+            file.write(message)
+
+    return None
+
+
 # @repeat(every(15).seconds)
 def scrape():
     """
@@ -78,9 +103,14 @@ def scrape():
     data = get_current_stations_status()
     # Process data and write to csv
     add_to_dataset(data)
+
+    # Write log to txt file
+    terminal_log()
+
     print('DONE')
 
     return None
+
 
 
 # Schedule at every quarter hour
@@ -97,4 +127,3 @@ if __name__ == '__main__':
     while True:
         run_pending()
         time.sleep(1)
-        pass

@@ -1,7 +1,10 @@
 prep.ipynb
 .python-version
 *.ipynb
-data/*
 
-# Keep data folder
+spot_dataset.py
+*.txt
+
+# Keep data folder without the actual data
+data/*
 !data/.gitkeep
