@@ -1,4 +1,7 @@
 prep.ipynb
 .python-version
 *.ipynb
-data/velib_data.csv
+data/*
+
+# Keep data folder
+!data/.gitkeep
