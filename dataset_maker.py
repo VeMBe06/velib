@@ -92,10 +92,6 @@ every().hour.at(":45").do(scrape)
 
 if __name__ == '__main__':
 
-    # # For tests purposes
-    # tmp = get_current_stations_status()
-    # print(type(tmp))
-    # print(tmp)
     print("Starting script")
 
     while True:
