@@ -10,9 +10,14 @@ From that came the idea of finding out by myself the answer ot that question by 
 # Dev log
 ## Currently working on:
 
-- Setting up a system to collect velib data 24/7 for a week
 - Planning what insights I want to get from the data to answer my questions
+- Downloaded the csv file from the 3 first days of data collection, will start
+experimenting with it for an early EDA
+- The virtual machine is currently collecting data, I'll stop the process next
+Monday
 
 ## Past Tasks:
+
+- Set up a virtual machine on Google Cloud Platform to collect velib data 24/7 for a week
 - Found a way to trigger the data collection process at regular time intervals
 - Set up a script to create a dataset out of Smovengo's public API
