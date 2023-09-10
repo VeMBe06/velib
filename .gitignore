@@ -1,6 +1,7 @@
 prep.ipynb
 .python-version
 *.ipynb
+notebooks/
 
 spot_dataset.py
 *.txt

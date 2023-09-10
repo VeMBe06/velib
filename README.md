@@ -10,9 +10,15 @@ From that came the idea of finding out by myself the answer ot that question by 
 # Dev log
 ## Currently working on:
 
-- Setting up a system to collect velib data 24/7 for a week
 - Planning what insights I want to get from the data to answer my questions
+- Starting the Exploratory Data Analysis of the Velib dataset I created
+- Starting to explore dataviz libraries to find which one will be best for my use case (currently
+hesitating between Folium, Matplotlib and Plotly)
 
 ## Past Tasks:
+
+- Downloaded the final csv file from my VM and shut everything down to optimize cost
+- The virtual machine is done collecting data, after 700+ API calls I have a (supposedly) working dataset
+- Set up a virtual machine on Google Cloud Platform to collect velib data 24/7 for a week
 - Found a way to trigger the data collection process at regular time intervals
 - Set up a script to create a dataset out of Smovengo's public API
