@@ -53,7 +53,7 @@ def add_to_dataset(data:dict) -> None:
     df_final = df[['stationCode', 'station_id', 'num_bikes_available',
                'num_bikes_available_mechanical', 'num_bikes_available_ebike',
                'num_docks_available', 'is_installed', 'is_returning', 'is_renting',
-               'last_reported']]
+               'last_reported', 'api_calltime']]
 
     # Write to csv
     if not os.path.isfile("data/velib_data.csv"):
