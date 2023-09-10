@@ -46,8 +46,8 @@ def add_to_dataset(data:dict) -> None:
     # Drop unnecessary columns
     df.drop(columns=['num_bikes_available_types', 'numBikesAvailable', 'numDocksAvailable'], inplace=True)
 
-    # Replace timestamp with a unique value to make it easy later on
-    df['last_reported'] =  df['last_reported'].median().astype(int)
+    # Add API call-time to df, don't touch last_reported feature
+    df['api_calltime'] = round(time.time())
 
     # change column order
     df_final = df[['stationCode', 'station_id', 'num_bikes_available',
