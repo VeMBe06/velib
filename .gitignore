@@ -8,3 +8,7 @@ spot_dataset.py
 # Keep data folder without the actual data
 data/*
 !data/.gitkeep
+
+
+# VM nohup process
+nohup.out
