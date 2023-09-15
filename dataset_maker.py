@@ -120,6 +120,7 @@ every().hour.at(":30").do(scrape)
 every().hour.at(":45").do(scrape)
 
 
+
 if __name__ == '__main__':
 
     print("Starting script")
