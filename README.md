@@ -10,9 +10,6 @@ From that came the idea of finding out by myself the answer ot that question by 
 # Dev log
 ## Currently working on:
 
-- Turns out the dataset I created has a major flaw: some of the timestamps didn't update from one API call to the next, which is problematic. This happened to about more than 60% of the
-API calls, which is huge. I suspect that the API provided by Velib doesn't actually update the station status timestamps every minute if no bikes were taken in/out of the station.
-I decided to modify my dataset making script and relaunch my VM for a new week of data collection while I figure out if I can still use the data I gathered before
 - Planning what insights I want to get from the data to answer my questions
 - Starting the Exploratory Data Analysis of the Velib dataset I created
 - Starting to explore dataviz libraries to find which one will be best for my use case (currently
@@ -20,6 +17,9 @@ hesitating between Folium, Matplotlib and Plotly)
 
 ## Past Tasks:
 
+- Turns out the first dataset I created has a major flaw: some of the timestamps didn't update from one API call to the next, which is problematic. This happened to about more than 60% of the
+API calls, which is huge. I suspect that the API provided by Velib doesn't actually update the station status timestamps every minute if no bikes were taken in/out of the station.
+I modified my dataset making script and relaunched my VM for a new week of data collection to get a fresh dataset
 - Downloaded the final csv file from my VM and shut everything down to optimize cost
 - The virtual machine is done collecting data, after 700+ API calls I have a (supposedly) working dataset
 - Set up a virtual machine on Google Cloud Platform to collect velib data 24/7 for a week
