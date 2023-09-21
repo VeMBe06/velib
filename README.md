@@ -16,6 +16,7 @@ hesitating between Folium and Plotly)
 
 ## Past Tasks:
 
+- Added a new folder for interesting visuals that might pop up during the preparation of the project
 - Planned what type of insight I want to extract from the data: I'm focusing on impactful visuals
 - Exploratory Data Analysis of the Velib dataset I created
 - Turns out the first dataset I created has a major flaw: some of the timestamps didn't update from one API call to the next, which is problematic. This happened to about more than 60% of the
