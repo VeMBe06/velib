@@ -11,11 +11,13 @@ From that came the idea of finding out by myself the answer ot that question by 
 ## Currently working on:
 
 - Exploring dataviz libraries to find which one will be best for my use case (currently
-hesitating between Folium and Plotly)
-- Testing whether I can reproduce the information there is on the Velib map, with station information etc
+hesitating between Folium and Plotly). With Folium is easier to have a dynamic heatmap running, but
+I can't save the results the way I want and I can't display everything I want to show on the viz
 
 ## Past Logs:
 
+- Tested whether I can reproduce the information there is on the Velib map, with station information etc. It's possible,
+but with folium I don't really have many options to do what I have in mind which is a shame.
 - Performed Data Cleaning, trying to minimize data loss in the process. A big part of it was to understand how the Velib API worked
 in order to decide exactly what was "dirty". In the end I got a pretty good idea of how the API worked and was able to remove the
 data that was unusable (at least for the use I have of it)
