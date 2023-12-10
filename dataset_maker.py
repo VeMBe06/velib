@@ -18,9 +18,10 @@ def get_current_stations_status() -> dict:
     Sends get request to velib api and rerceives station data.
     Returns the correct info from the api call
     """
+    # Old URL is not supported anymore, change to new one below:
+    # url = "https://velib-metropole-opendata.smoove.pro/opendata/Velib_Metropole/station_status.json"
 
-    url = "https://velib-metropole-opendata.smoove.pro/opendata/Velib_Metropole/station_status.json"
-
+    url = "https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_status.json"
     response = requests.get(url).json()
     result = response['data']['stations']
 
