@@ -10,6 +10,7 @@ spot_dataset.py
 data/*
 !data/.gitkeep
 past_data/
+color-maps/
 
 # VM nohup process
 nohup.out
